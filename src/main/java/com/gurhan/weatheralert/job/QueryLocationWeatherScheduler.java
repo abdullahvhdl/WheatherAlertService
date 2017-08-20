@@ -38,8 +38,8 @@ public class QueryLocationWeatherScheduler {
 	@Value("${openweathermap.appkey}")
 	private String appKey;
 
-	// @Scheduled(fixedRate = 1000 * 60 * 60 * 3)
-	@Scheduled(fixedRate = 1000 * 30)
+	@Scheduled(fixedRate = 1000 * 60 * 60 * 3)
+	// @Scheduled(fixedRate = 1000 * 30)
 	public void updateWeatherInfo() {
 
 		ObjectMapper mapper = new ObjectMapper();
